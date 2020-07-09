@@ -47,6 +47,7 @@ modalSubmit.addEventListener('submit', event => {
 addAd.addEventListener('click', () => {
     modalAdd.classList.remove('hide');
     modalBtnSubmit.disabled = true;
+    modalBtnWarning.style.display = '';
     document.addEventListener('keydown', closeModal);
 });
 
