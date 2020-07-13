@@ -58,6 +58,18 @@
 					</label>
 				</form>
 			</div>
+			<div class="price-filter">
+				<form class="price-filter__form">
+					Цена:
+					<label class="price-filter__label">
+						от <input type="number" class="price-filter__input price-filter__input-min" value="0"> ₽
+					</label>,
+					<label class="price-filter__label">
+						до <input type="number" class="price-filter__input price-filter__input-max" value="0"> ₽
+					</label>
+					<button class="price-filter__btn-reset">Сбросить фильтр</button>
+				</form>
+			</div>
 
 		</div>
 	</header>
@@ -94,13 +106,7 @@
 
 					<label>
 						<span>Категория:</span>
-						<select name="category">
-							<option value="toy">Игрушки</option>
-							<option value="furniture">Мебель</option>
-							<option value="foot">Обувь</option>
-							<option value="cloth">Одежда</option>
-							<option value="tech">Техника</option>
-						</select>
+						<input name="category" type="text" required>
 					</label>
 
 					<label>
